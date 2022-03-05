@@ -92,19 +92,11 @@ https://github.com/ivan-titovich/devops-netology-rebase
 
    Ищем функцию:
 
-`git log -S'func synchronizedWriters' --oneline` 
+`git log -S"func synchronizedWriters(" --pretty=format:"%h %an %ad %s"`
 
 
-    bdfea50cc remove unused
-    5ac311e2a main: synchronize writes to VT100-faker on Windows
+    bdfea50cc James Bardin Mon Nov 30 18:02:04 2020 -0500 remove unused
+    5ac311e2a Martin Atkins Wed May 3 16:25:41 2017 -0700 main: synchronize writes to VT100-faker on Windows
 
-
-   Смотрим коммиты и находим автора:
-
-`git show 5ac311e2a`
-
-
-    commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5
-    Author: Martin Atkins <mart@degeneration.co.uk>
-    Date:   Wed May 3 16:25:41 2017 -0700
+Соответственно автор:  **Martin Atkins**
 
